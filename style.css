@@ -1,0 +1,749 @@
+ * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            width: 100vh;
+            height: 100vh;
+            /* opacity: 0.8; */
+            z-index: -1;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+
+        }
+
+        .dot {
+            top: -50px;
+
+            height: 15px;
+            width: 15px;
+            /* margin: 0 2px; */
+            background-color: rgb(196, 182, 182);
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #646161;
+        }
+
+        /* Fading animation */
+        .fade {
+            /* -webkit-animation-name: fade; */
+            /* -webkit-animation-duration: 1.5s; */
+            /* animation-name: antifade; */
+            animation-name: fade;
+            animation-duration: 3s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            left: 485px;
+            justify-content: center;
+            z-index: +1;
+            top: 30px;
+            text-align: center;
+            position: absolute;
+            color: rgb(235, 28, 28);
+        }
+
+        .navigation {
+            list-style: none;
+            display: flex;
+
+
+        }
+
+        .navigation li {
+
+            margin: 0px 30px;
+            position: relative;
+            left: 230px;
+        }
+
+        .navbar h3 {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 40px;
+        }
+
+        .intro {
+            position: absolute;
+            top: 300px;
+            z-index: +1;
+            color: rgb(238, 230, 230);
+            left: 487px;
+            width: 30%;
+
+        }
+
+        .intro h1 {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 40px;
+        }
+
+        .intro p {
+            top: 20px;
+            position: relative;
+        }
+
+        .learn-more {
+            margin-top: 100px;
+            position: absolute;
+            top: 500px;
+            left: 487px;
+            z-index: +1;
+        }
+
+        .learn-more button {
+            /* margin: 10px 0px; */
+            padding: 12px;
+            background-color: rgb(70 20 78);
+            color: rgb(243, 233, 233);
+            border: 2px solid rgb(70 20 78);
+        }
+
+        .learn-more button:hover {
+            background-color: rgb(177, 228, 82);
+            color: black;
+            border: 2px solid rgb(126, 231, 100);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .navigation li:hover {
+            color: rgb(197, 197, 142);
+            cursor: pointer;
+        }
+
+        .welcome {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .welcome h1 {
+            align-items: center;
+            text-align: center;
+            margin: 15px;
+        }
+
+        .welcome p {
+            width: 25%;
+            font-size: large;
+            position: relative;
+            top: 100px;
+            left: 600px;
+        }
+
+        .welcome img {
+            display: flex;
+            width: 300px;
+            height: 300px;
+            position: relative;
+            top: -100px;
+            left: 1500px;
+            align-items: center;
+        }
+
+        .about {
+            display: flex;
+            margin-left: 350px;
+            margin-right: 350px;
+            border-bottom: 2px solid rgb(161, 154, 154);
+            margin-bottom: 50px;
+        }
+
+        .card {
+            width: 100%;
+            align-items: center;
+            margin: 20px 82px;
+            padding: 20px 20px;
+
+        }
+
+        #cardid-1 {
+            text-align: center;
+        }
+
+        #cardid-2 {
+            text-align: center;
+        }
+
+        #cardid-3 {
+            text-align: center;
+        }
+
+        .about img {
+
+            width: 70px;
+            height: 70px;
+        }
+
+        .card h3 {
+            color: rgb(104, 8, 104);
+        }
+
+        .card p {
+            color: rgb(109, 102, 102);
+        }
+
+        .card button {
+            padding: 12px;
+            background-color: rgb(70 20 78);
+            color: rgb(219, 208, 208);
+            border: 2px solid rgb(70 20 78);
+        }
+
+        .card button:hover {
+            background-color: rgb(245, 179, 92);
+            color: black;
+            border: 2px solid rgb(245, 179, 92);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .projects {
+            display: flex;
+
+        }
+
+        .proj {
+            background-color: rgb(177, 157, 157);
+        }
+
+        .proj h3 {
+            padding: 20px 20px;
+        }
+
+        .proj p {
+            padding: 20px;
+            color: rgb(90, 83, 83);
+        }
+
+        .proj button {
+            padding: 10px;
+            margin-left: 20px;
+            margin-bottom: 50px;
+            font-weight: bold;
+            border: 2px solid rgb(196, 190, 190);
+            border-radius: 5px;
+        }
+
+        .proj img {
+            width: 475px;
+            height: 800px;
+        }
+
+        /*          */
+        .proj button:hover {
+            background-color: rgb(158, 31, 158);
+            color: rgb(231, 220, 220);
+            cursor: pointer;
+        }
+
+        .heading {
+            width: 100%;
+            margin: auto;
+            padding: 30px 10px;
+        }
+
+        .heading h1 {
+            text-align: center;
+        }
+
+        #projid-2 {
+            background-color: rgb(190, 170, 170);
+        }
+
+        #projid-4 {
+            background-color: rgb(196, 177, 177);
+        }
+
+        .price-table {
+            width: 100%;
+            margin: auto;
+            padding: 30px 10px;
+        }
+
+        .price-table h1 {
+            text-align: center;
+        }
+
+        .table {
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            width: 100%;
+            margin: auto;
+        }
+
+        .plan {
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid red; */
+            align-items: center;
+            /* justify-content: center; */
+            margin: 20px 20px;
+            /* padding: 200px; */
+        }
+
+        .plan h4 {
+            color: rgb(119, 112, 112);
+            padding: 15px;
+        }
+
+        .plan p {
+            padding: 7px;
+        }
+
+        .plan button {
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(194, 194, 97);
+            color: rgb(10, 10, 10);
+            border: 1px solid rgb(228, 212, 212);
+            border-radius: 5px;
+        }
+
+        .plan button:hover {
+            background-color: rgb(70 20 78);
+            color: rgb(233, 218, 218);
+        }
+
+        #standard {
+            border-right: 2px solid rgb(172, 164, 164);
+            padding-right: 15px;
+        }
+
+        #premium {
+            border-left: 2px solid rgb(175, 167, 167);
+            padding-left: 15px;
+        }
+
+        .videocontainer h1 {
+            text-align: center;
+            color: rgb(201, 182, 182);
+        }
+
+        .videocontainer {
+            width: 100%;
+            /* margin: 30px; */
+            padding: 30px;
+            background-color: rgb(70 20 78);
+        }
+
+        .teamcontainer {
+            padding: 40px;
+            /* width: 40%; */
+        }
+
+        .teamcontainer h1 {
+            text-align: center;
+        }
+
+        .members {
+            display: flex;
+            flex-wrap: wrap;
+            width: 43%;
+            margin: auto;
+            margin-top: 50px;
+            /* margin: 100px; */
+        }
+
+        .members img {
+            margin: 30px 30px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .members p {
+            text-align: center;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .role {
+            color: rgb(112, 109, 109);
+            margin-bottom: 20px;
+        }
+
+        #mem-1 {
+            position: relative;
+        }
+
+        #mem-2 {
+            position: relative;
+        }
+
+        #mem-3 {
+            position: relative;
+        }
+
+        #mem-4 {
+            position: relative;
+        }
+
+        #mem-5 {
+            position: relative;
+        }
+
+        #mem-6 {
+            position: relative;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+            transform: translate(-50%, -67%);
+            /* z-index: -1; */
+            /* -ms-transform: translate(-50%, -50%); */
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .middle:hover {
+            opacity: 1;
+            color: rgb(141, 124, 124);
+            background-color: rgba(77, 41, 83, 0.5);
+            cursor: pointer;
+        }
+
+
+        .social img {
+            width: 185px;
+            height: 100px;
+            opacity: 2;
+        }
+
+        .slidercontainer {
+            width: 100%;
+            /* margin: 30px; */
+            padding: 20px;
+            background-color: rgb(156, 135, 135);
+        }
+
+        .slidercontainer h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+
+        #slider {
+            width: 60%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        #slider figure img {
+            width: 20%;
+            float: left;
+        }
+
+        #slider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            text-align: left;
+            font-size: 0;
+            animation-name: slidy;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+            /* animation: 30s slidy infinite; */
+        }
+
+        @keyframes slidy {
+            0% {
+                left: 0%;
+            }
+
+            20% {
+                left: 0%;
+            }
+
+            25% {
+                left: -100%;
+            }
+
+            45% {
+                left: -100%;
+            }
+
+            50% {
+                left: -200%;
+            }
+
+            70% {
+                left: -200%;
+            }
+
+            75% {
+                left: -300%;
+            }
+
+            95% {
+                left: -300%;
+            }
+
+            100% {
+                left: -400%;
+            }
+        }
+
+        .signup {
+            /* display: flex; */
+            padding: 30px;
+            background-image: url("signup.jfif");
+            height: 100%;
+        }
+
+        .signupcontainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 150px;
+        }
+
+        .signup h1 {
+            text-align: center;
+            font-weight: bold;
+            color: rgb(12, 218, 183);
+        }
+
+        .signup input {
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+            /* text-align: center; */
+            height: 40px;
+            width: 300px;
+            border: 2px solid rgb(233, 221, 221);
+        }
+
+        .signup button {
+            background-color: rgb(101, 40, 110);
+            color: rgb(197, 180, 180);
+            height: 40px;
+            width: 100px;
+            border: 2px solid rgb(70 20 78);
+            border-radius: 3px;
+        }
+
+        .signup button:hover {
+            background-color: rgb(173, 224, 91);
+            color: black;
+            border: 2px solid rgb(176, 233, 86);
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .blogcontainer {
+            width: 50%;
+            margin: auto;
+            /* margin: 20px 445px; */
+            display: flex;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .blogcard img {
+            width: 80%;
+            height: 60%;
+        }
+
+        .blogheading {
+            display: block;
+            text-align: center;
+            margin: 70px;
+            font-weight: bold;
+        }
+
+        .blogcard {
+            /* border: 2px solid red; */
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* padding: 30px; */
+        }
+
+        .blogcard h3 {
+            padding: 10px 40px;
+            font-weight: bold;
+
+        }
+
+        .date {
+            padding: 10px 40px;
+            color: rgb(136, 127, 127);
+        }
+
+        .bloginfo {
+            padding: 10px 40px;
+        }
+
+        .blogcard button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: rgb(202, 187, 187);
+            border: 2px solid rgb(190, 181, 181);
+            font-weight: 550;
+            border-radius: 3px;
+
+        }
+
+        .blogcard button:hover {
+            background-color: rgb(188, 230, 73);
+            border: 2px solid rgb(204, 235, 93);
+            cursor: pointer;
+        }
+
+        .Contact {
+            display: flex;
+            height: 80vh;
+            margin-bottom: 100px;
+        }
+
+        .form {
+
+            background-color: rgb(160, 236, 88);
+            width: 100%;
+            padding: 50px;
+        }
+
+        .form h1 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .map img {
+            height: 80vh;
+        }
+
+        .form label {
+            font-weight: 550;
+        }
+
+        .form textarea {
+            border: 2px solid rgb(216, 205, 205);
+            border-radius: 3px;
+
+        }
+
+        .form input {
+            border: 2px solid rgb(214, 209, 209);
+            border-radius: 3px;
+            margin-bottom: 20px;
+            width: 36%;
+        }
+
+        .form button {
+            color: rgb(197, 187, 187);
+            width: 36%;
+            margin-top: 20px;
+            background-color: rgb(122, 78, 129);
+            border: 2px solid rgb(105, 49, 114);
+            border-radius: 3px;
+            padding: 10px 30px;
+        }
+
+        .form button:hover {
+            background-color: rgb(211, 190, 190);
+            color: black;
+            border: 2px solid rgb(167, 153, 153);
+            cursor: pointer;
+        }
+
+        .end {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .endcards {
+            width: 20%;
+            text-align: center;
+            padding: 10px 100px;
+        }
+
+        .endcards p {
+            margin-bottom: 10px;
+        }
+
+        .logos {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+        }
+
+        .logos img {
+            padding: 5px 5px;
+            width: 50px;
+            height: 40px;
+            
+        }
+
+        .logos:hover {
+            cursor: pointer;
+        }
